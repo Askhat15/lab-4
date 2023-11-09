@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+    <title>Алфавит</title>
+</head>
+<body>
+<h1>Алфавит</h1>
+<form method="POST" action="{% url 'Alphabet' %}">
+    {% csrf_token %}
+    <button type="submit" name="action" value="on">Включить</button>
+    <button type="submit" name="action" value="off">Выключить</button>
+</form>
+ <p><img width="900" height="1000" src="https://printmania.by/content/uploads/download/azbuka-morze/azbuka-morze-russkij-alfavit-900x1273.jpg" class="attachment-large size-large" alt="Азбука Морзе: русский алфавит" decoding="async" loading="lazy" srcset="https://printmania.by/content/uploads/download/azbuka-morze/azbuka-morze-russkij-alfavit-900x1273.jpg 900w, https://printmania.by/content/uploads/download/azbuka-morze/azbuka-morze-russkij-alfavit-350x495.jpg 350w, https://printmania.by/content/uploads/download/azbuka-morze/azbuka-morze-russkij-alfavit-768x1086.jpg 768w, https://printmania.by/content/uploads/download/azbuka-morze/azbuka-morze-russkij-alfavit-300x424.jpg 300w" sizes="(max-width: 900px) 100vw, 900px"></p>
+</body>

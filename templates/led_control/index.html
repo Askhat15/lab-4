@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<head>
+    <title>LED Control</title>
+</head>
+<body>
+<h1>Управление светодиодом команды молочный шоколад</h1>
+<form method="POST" action="{% url 'led_control' %}">
+    {% csrf_token %}
+    <button type="submit" name="action" value="on">Включить</button>
+    <button type="submit" name="action" value="off">Выключить</button>
+</form>
+</body>
